@@ -1,43 +1,832 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <title>Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="root">
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Abhishek Kumar</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Abhishek Kumar</h1>
+      <p>I'm <span class="typed" data-typed-items="Cloud Developer, Full Stack Java Developer, Full Stack Python Developer"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>
+            Hi, I'm Abhishek Kumar, a passionate Software Developer/Engineer based in Bangalore, India. I graduated with a Bachelor of Technology in EE from Government Engineering College, Vaishali, Bihar, where I maintained a Cumulative GPA of 8.16. I have a solid foundation in programming and hands-on experience in various technologies, including Java, Python, and Cloud Computing, I'm enthusiastic about leveraging my skills to create innovative solutions.
+          </p>
+          
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Full Stack Java Developer &amp; Cloud Developer.</h3>
+            <p class="fst-italic">
+              "Versatile Full Stack Java Developer & Cloud Specialist: Crafting Tomorrow's Digital Solutions with Innovation and Expertise."
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>11 August 1999</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 7352303757</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>akraj844@gmil.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bangalore, INDIA</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Technology (EE)</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Academic Year:</strong> <span>2018 - 2022</span></li>
+                  
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              Throughout my academic journey and internships, I've honed my problem-solving abilities and gained valuable experience in software development methodologies. I'm proficient in backend technologies such as Java, J2EE, and Spring Framework, and have a keen interest in frontend development using HTML and CSS. Additionally, I've worked with cloud computing platforms like AWS and have experience in database management with MySQL and Oracle.
+            </p>
+            
+            <p>
+              I'm driven by a passion for continuous learning and enjoy staying updated with the latest trends in technology. Currently seeking opportunities to apply my skills and further develop my expertise in software development.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+   
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Throughout my journey, I have acquired a diverse skill set that includes programming languages like Java, Python, and JavaScript, as well as web development technologies such as HTML and CSS. This comprehensive range of skills enables me to tackle various challenges with ease.</p>
+
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Java <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+    
+            <div class="progress">
+              <span class="skill">Python <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+    
+            <div class="progress">
+              <span class="skill"> Cloud Computing (AWS) <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"> Structured Query language (SQL) <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"> Database <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"> Oracle DB <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"> MySQL <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+    
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+    
+            <div class="progress">
+              <span class="skill"> JavaScript <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"> Bootstrap <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"> Web Application <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"> SpringBoot (Web Framework- Java) <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"> Django (Web Framework- Python) <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+    
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+    
+        <div class="section-title">
+          <h2>Resume</h2>
+          <button onclick="window.location.href='path_to_your_resume.pdf'" download>Download Resume</button>
+        </div>
+        
+    
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Abhishek Kumar</h4>
+              <p><em>Enthusiastic aspiring Software Developer/Engineer with a strong foundation in programming. Possessing solid knowledge of software development methodologies and exceptional problem-solving skills. Actively seeking an entry-level position to contribute to dynamic projects, further develop technical expertise, and thrive within a collaborative team environment.</em></p>
+              <ul>
+                <li>Bangalore, India</li>
+                <li>akraj844@gmail.com | 7352303757</li>
+                <li><a href="www.linkedin.com/in/abhi76342/">LinkedIn Profile</a></li>
+              </ul>
+            </div>
+    
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Technology (EE)</h4>
+              <h5>July 2018 - Sep 2022</h5>
+              <p><em>Government Engineering College, Vaishali, Bihar</em></p>
+              <p>Cumulative GPA: 8.16</p>
+            </div>
+            
+          </div>
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="resume-title">Skills</h3>
+            <div class="resume-item">
+              <h4>Soft Skills</h4>
+              <ul>
+                <li>Problem Solving</li>
+                <li>Team Leadership</li>
+                <li>Critical Thinking</li>
+                <li>Fast Learning</li>
+                <li>Communication</li>
+                <li>Adaptability</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Programming Languages</h4>
+              <ul>
+                <li>Java</li>
+                <li>J2EE</li>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript (Basic)</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Technical Skills</h4>
+              <ul>
+                <li>Amazon Web Service (AWS)</li>
+                <li>Backend development (Java, J2EE, Spring Framework)</li>
+                <li>Frontend development (HTML and CSS)</li>
+                <li>Database (Oracle and MySQL)</li>
+                <li>Testing and Deployment (Docker, Kubernetes)</li>
+                <li>Windows Software and Hardware Troubleshooting</li>
+                <li>Microsoft Excel</li>
+                <li>Microsoft Word</li>
+                <li>Microsoft Power Point</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Operating System & Languages</h4>
+              <ul>
+                <li>Operating System (OS): Windows & Linux</li>
+                <li>Languages: English, Hindi</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Java Developer - Intern</h4>
+              <h5>Dec 2023 – Jan 2024</h5>
+              <p><em>Oasis Infobyte, Delhi, India</em></p>
+              <ul>
+                <li>Intern in Java development, creating applications with Java, J2EE, SQL, and front-end technologies for a comprehensive skillset.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Software Tester - Intern</h4>
+              <h5>May 2023 – Jun 2023</h5>
+              <p><em>PHN Technology Pvt. Ltd., Pune, India</em></p>
+              <ul>
+                <li>Performed manual testing, diagnosed software issues, and collaborated for Android app optimization, enhancing functionality, UI, and overall performance.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Full Stack Java Developer - Intern</h4>
+              <h5>Sep 2022 – Feb 2023</h5>
+              <p><em>KodNest Technologies Pvt. Ltd., Bangalore, India</em></p>
+              <ul>
+                <li>Interned as a Full Stack Developer at KodNest, engaged in project-based learning encompassing Java, SQL, Python, front-end technologies, and database management.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <h3 class="resume-title">Projects</h3>
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <div class="resume-item">
+              <h4>LearnSphere (E-Learning Platform Web Application)</h4>
+              <h5>Dec 2023</h5>
+              <p><em>Developed Learnsphere, an advanced e-learning platform showcasing seamless operations. Integrated features for Trainer and Student Registration, course creation, enrollment, utilizing cutting-edge technologies for scalability and user-friendliness.</em></p>
+              <ul>
+                <li>Programming Language: Java and J2EE</li>
+                <li>Frameworks Used: Hibernate, SpringBoot, Thymeleaf</li>
+                <li>Database: MySQL</li>
+                <li>Tools and IDE: Apache-tomcat, Eclipse EE</li>
+              </ul>
+            </div>
+            
+            <div class="resume-item">
+              <h4>Student Management System</h4>
+              <h5>Aug 2023</h5>
+              <p><em>Developed a Student Management System with functionalities - Home Page, Add, View, Update, and Delete Student Information.</em></p>
+              <ul>
+                <li>Back-End: Java SpringBoot</li>
+                <li>Front-End: HTML & CSS</li>
+                <li>IDE: Eclipse EE</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <h3 class="resume-title">Certifications</h3>
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <div class="resume-item">
+              <h4>Certified Full Stack Java Developer</h4>
+              <p><em>KodNest Technologies Pvt. Ltd., Bangalore</em></p>
+            </div>          
+            <div class="resume-item">
+              <h4>Certified Cloud Computing with AWS for Beginners</h4>
+              <p><em>Udemy</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Certified Linux for Cloud Engineer</h4>
+              <p><em>Udemy</em></p>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    <!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Java Projects</li>
+              <li data-filter=".filter-card">Python Projects</li>
+              <li data-filter=".filter-web">cloud-based Projects</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <h4>Python project</h4>
+                <a href="#" onclick="openModal()"><i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>"Empowering Innovation: Full Stack Development & Cloud Solutions. Crafted with expertise in Java, Python, JavaScript, AWS, and DevOps. Tailored software and scalable cloud solutions, ensuring reliability, performance, and client satisfaction in the digital era."</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title"><a href="">Service Offerings</a></h4>
+            <p class="description">Full Stack Development: Offering end-to-end development services, including front-end and back-end development, to create comprehensive and scalable solutions.
+              Cloud Solutions: Providing expertise in developing and deploying cloud-based applications, leveraging platforms like AWS to ensure reliable and flexible solutions.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a href="">Expertise Areas</a></h4>
+            <p class="description">Proficiency in Programming Languages: Mastery in Java, Python, and JavaScript, enabling the development of robust and efficient software solutions.
+              Web Development: Specialized skills in HTML, CSS, and JavaScript for crafting engaging and responsive web applications.
+              Backend Development: Extensive experience in backend technologies such as Java, J2EE, and Spring Framework for building robust server-side components.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="">Custom Solutions</a></h4>
+            <p class="description">Tailored Software Development: Crafting custom software solutions tailored to meet the unique requirements and objectives of clients.
+              Scalable Web Applications: Developing scalable and high-performance web applications that grow with the evolving needs of businesses.
+              Cloud Migration and Optimization: Assisting clients in migrating their applications to the cloud and optimizing cloud infrastructure for improved performance and cost-efficiency.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-binoculars"></i></div>
+            <h4 class="title"><a href="">Technologies Used</a></h4>
+            <p class="description">AWS Cloud Services: Utilizing Amazon Web Services (AWS) for cloud computing, including EC2, S3, and Lambda, to build scalable and reliable cloud solutions.
+              Database Management: Proficient in managing databases using MySQL and Oracle, ensuring efficient data storage and retrieval.
+              DevOps Tools: Familiarity with DevOps tools like Docker and Kubernetes for streamlined deployment and management of applications.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-brightness-high"></i></div>
+            <h4 class="title"><a href="">Value Proposition</a></h4>
+            <p class="description">Innovation-Driven Solutions: Delivering innovative solutions that leverage cutting-edge technologies to solve complex business challenges.
+              Quality Assurance: Ensuring the highest quality standards through rigorous testing and continuous refinement of solutions.
+              Client-Centric Approach: Partnering closely with clients to understand their needs and deliver solutions that exceed expectations.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="title"><a href="">Client Focus</a></h4>
+            <p class="description">Collaborative Engagement: Engaging clients throughout the development process to ensure alignment with their goals and objectives.
+              Transparent Communication: Providing clear and regular communication to keep clients informed about project progress and milestones.
+              Ongoing Support: Offering ongoing support and maintenance services to ensure the long-term success and stability of deployed solutions</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>I'm Ready to Take on New Challenges! Hire Me and Let's Turn Ideas into Reality. I'm Eagerly Awaiting Exciting Job Opportunities..!</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="/submit" method="post"  class="php-email-form" id="contactForm">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" id="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+          
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>BTM Layout, Bangalore, INDIA 560029</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>test@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 9876543210</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2403.0233628264655!2d77.60643595417065!3d12.91726910671934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1713055115855!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+    <!-- Bootstrap Modal -->
+    <div class="modal" id="customModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Custom Modal Title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="modalContent">
+            <!-- External HTML content will be loaded here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Reserved</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href=" ">Abhishek Kumar</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('downloadBtn').addEventListener('click', function() {
+      // Trigger download request
+      window.location.href = 'D:\portfolio-website\Resume\Resume.pdf'; // This should match the route defined in server.js
+    });
+  </script>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const formData = new FormData(this);
+      fetch('http://localhost:4000/submit', {
+          method: 'POST',
+          body: formData
+      })
+      .then(response => {
+          if (!response.ok) {
+              throw new Error('Network response was not ok');
+          }
+          return response.json();
+      })
+      .then(data => {
+          console.log('Form submission successful:', data);
+          // Handle success response, such as displaying a success message
+          document.querySelector('.sent-message').style.display = 'block';
+      })
+      .catch(error => {
+          console.error('Error submitting form:', error);
+          // Handle error, such as displaying an error message
+          document.querySelector('.error-message').style.display = 'block';
+      });
+  });
+  
+  </script>
+
+  <script>
+    // Function to load external HTML page into modal
+    $('#customModal').on('show.bs.modal', function (e) {
+      $('#modalContent').load('details.html');
+    });
+  </script>
+  </div>
+</body>
+
 </html>
